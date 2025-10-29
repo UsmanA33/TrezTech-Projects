@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+body{
+    line-height: 2.0;
+    color: #333;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar{
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-Index: 1000;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}.nav-menu a:hover{
+    color: aqua;
+}
+.hero{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+.hero-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button:hover{
+    background: #2c3e50;
+}
+.button:active{
+    background: greenyellow;
+}
+.features{
+    padding: 80px 0;
+    background: #ffffff;
+}
+.features h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #4063ff;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.features-card{
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.resources{
+    padding: 80px 0;
+    background: #ffffff;
+}
+.resources h4{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #4063ff;
+}
+.resources-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    gap: 2rem
+}
+.resources-item{
+    padding: 1.5rem;
+    border-left: 4px solid #556dff;
+    background: white;
+}
+.resources-item h4{
+    color: #556dff;
+    margin-bottom: 0.5rem;
+}
+.footer{
+    background: #8098ff;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
