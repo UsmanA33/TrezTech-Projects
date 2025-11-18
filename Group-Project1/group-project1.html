@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="group-project1.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Grade Calculator</h2>
+
+        <label>Student Name:</label>
+        <input type="text" id="studentName">
+
+        <label>Score (0–100):</label>
+        <input type="number" id="score">
+
+        <button onclick="calculateGrade()">Calculate Grade</button>
+
+        <div class="result-box" id="resultBox">
+            <p id="displayName"></p>
+            <p id="displayGrade"></p>
+            <p id="displayMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        function calculateGrade() {
+            let name = document.getElementById("studentName").value;
+            let score = Number(document.getElementById("score").value);
+            let grade = "";
+            let message = "";
+
+            if (score >= 90) {
+                grade = "A";
+                message = "Excellent";
+            } 
+            else if (score >= 70) {
+                grade = "B";
+                message = "Very Good";
+            }
+            else if (score >= 50) {
+                grade = "C";
+                message = "Pass";
+            }
+            else if (score >= 40) {
+                grade = "D";
+                message = "Poor";
+            }
+            else {
+                grade = "F";
+                message = "Fail";
+            }
+
+            document.getElementById("displayName").textContent = "Name: " + name;
+            document.getElementById("displayGrade").textContent = "Grade: " + grade;
+            document.getElementById("displayMessage").textContent = "Remark: " + message;
+
+            document.getElementById("resultBox").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
